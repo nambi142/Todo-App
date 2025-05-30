@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  font-family: 'Gloria Hallelujah', cursive, sans-serif;
+  background-color: #fdf6e3;
+  color: #333;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: radial-gradient(#e4dfd1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  color: #2b2b2b;
+  margin-bottom: 2rem;
+  border-bottom: 3px dashed #666;
+  padding-bottom: 0.5rem;
+  text-shadow: 1px 1px 0 #fff;
+}
+
+.searchbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.searchbar input {
+  padding: 10px;
+  border: 2px solid #333;
+  background-color: #fff8e7;
+  color: #333;
+  font-size: 1.1rem;
+  width: 250px;
+  border-radius: 6px;
+  box-shadow: inset -1px -1px 0 #999;
+}
+
+.searchbar button {
+  background-color: #ffcc00;
+  color: #000;
+  padding: 10px 16px;
+  border: 3px solid #333;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #999;
+  transition: 0.3s;
+}
+
+.searchbar button:hover {
+  background-color: #ffe066;
+  box-shadow: 3px 3px 0 #999;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#taskList li {
+  background-color: #fffef9;
+  border: 3px solid #000;
+  margin-bottom: 1rem;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 0 #bbb;
+  position: relative;
+  font-size: 2rem;
+}
+
+#taskList li input[type="text"] {
+  background-color: #fffef9;
+  border: 2px dashed #999;
+  color: #333;
+  padding: 6px;
+  border-radius: 4px;
+  margin-left: 10px;
+  flex-grow: 1;
+  font-size: 1.5rem;
+}
+
+#taskList li label {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.strikeTaskItem {
+  text-decoration: line-through  red;
+  color: #333;
+}
+
+#taskList button {
+  margin-left: 10px;
+  background-color: #ffcc00;
+  color: #000;
+  border: 2px dotted #333;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #888;
+  transition: 0.2s;
+}
+
+#taskList button:hover {
+  background-color: #ffe066;
+}
+
+input[type="checkbox"] {
+  accent-color: #ff8800;
+  font-size:2rem;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+    align-items: stretch;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .searchbar {
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .searchbar input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .searchbar button {
+    width: 30%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  #taskList li {
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  #taskList li input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #taskList li label {
+    margin-left: 0;
+    width: 100%;
+    word-wrap: break-word;
+  }
+
+  #taskList button {
+    width: 20%;
+    margin-left: 0;
+  }
+
+  input[type="checkbox"] {
+    transform: scale(1.1);
+  }
+}
