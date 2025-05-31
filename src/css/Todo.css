@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  font-family: 'Gloria Hallelujah', cursive, sans-serif;
+  font-family: "Texturina", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   background-color: #fdf6e3;
   color: #333;
   min-height: 100vh;
